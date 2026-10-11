@@ -1,0 +1,18 @@
+id: LG-01
+title: Review of security event logs
+owner: IT Security
+frequency: weekly
+type: detective
+automation: partial
+description: >
+  Security event logs of in-scope systems are collected centrally. Alerts are reviewed weekly,
+  security events are evaluated and escalated as incidents where needed.
+test_procedure:
+  - Inspect the log sources connected to the central log tool.
+  - Sample weeks and confirm the review was done and events were evaluated.
+evidence:
+  - List of connected log sources
+  - Weekly review records with escalations
+mappings:
+  soc2: [CC7.3]
+  iso27001: ["8.15"]
