@@ -1,0 +1,18 @@
+name: compliance-check
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Validate controls and report coverage
+        run: python3 scripts/check_controls.py
+      - name: Run sample user access review
+        run: python3 scripts/uar_check.py evidence/uar-2026-q3/hr_active.csv evidence/uar-2026-q3/app_accounts.csv
