@@ -1,0 +1,19 @@
+id: GV-01
+title: Whistleblowing channel
+owner: Compliance
+frequency: continuous
+type: detective
+automation: manual
+description: >
+  Employees, customers and suppliers can report concerns, including anonymously, through a
+  whistleblowing channel in line with the EU Whistleblower Directive. Reports are acknowledged
+  within 7 days and handled by Compliance.
+test_procedure:
+  - Inspect the channel and its communication to employees.
+  - Sample reports and confirm acknowledgement and closure timelines.
+evidence:
+  - Channel description and communication
+  - Case log (anonymised)
+mappings:
+  soc2: [CC2.3]
+  iso27001: ["6.8"]

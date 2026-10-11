@@ -1,0 +1,18 @@
+id: MO-01
+title: Monitoring of key risk indicators and anomalies
+owner: IT Security
+frequency: continuous
+type: detective
+automation: full
+description: >
+  Dashboards track key risk indicators and flag anomalies (for example unusual login volumes or
+  transaction patterns). Alerts above threshold are triaged and documented.
+test_procedure:
+  - Inspect the alert rules and thresholds.
+  - Sample alerts and confirm triage and closure.
+evidence:
+  - Alert rule configuration
+  - Alert log with triage notes
+mappings:
+  soc2: [CC7.2]
+  iso27001: ["8.16"]

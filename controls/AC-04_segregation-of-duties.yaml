@@ -1,0 +1,18 @@
+id: AC-04
+title: Segregation of duties review
+owner: Finance and IT Operations
+frequency: semi-annual
+type: detective
+automation: manual
+description: >
+  Conflicting role combinations (for example create vendor and approve payment) are defined in an
+  SoD matrix. Users holding conflicting roles are removed or covered by a documented mitigating control.
+test_procedure:
+  - Run the SoD matrix against current role assignments.
+  - For each conflict, inspect removal or the mitigating control and its operation.
+evidence:
+  - SoD matrix and conflict report
+  - Mitigating control documentation
+mappings:
+  soc2: [CC6.3, CC5.1]
+  iso27001: ["5.3"]

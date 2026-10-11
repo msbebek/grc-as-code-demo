@@ -1,0 +1,9 @@
+email,role,approval_ref
+anna.keller@example.com,approver,CHG-1042
+ben.ortiz@example.com,admin,
+clara.wu@example.com,accountant,
+david.lang@example.com,accountant,
+emre.yilmaz@example.com,developer,
+fatima.noor@example.com,viewer,
+george.hart@example.com,accountant,
+svc-backup@example.com,admin,CHG-0988

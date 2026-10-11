@@ -1,0 +1,18 @@
+id: AC-02
+title: Privileged access review
+owner: IT Security
+frequency: quarterly
+type: detective
+automation: partial
+description: >
+  Admin and privileged accounts are reviewed every quarter. Each privileged account needs a named
+  owner and a documented business reason; shared or unapproved admin accounts are removed.
+test_procedure:
+  - Filter the account export for privileged roles.
+  - Confirm each privileged account has an approval reference and an active owner.
+evidence:
+  - Privileged account list with approval references
+  - Exceptions and remediation tickets
+mappings:
+  soc2: [CC6.1, CC6.3]
+  iso27001: ["8.2", "5.18"]

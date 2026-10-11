@@ -1,0 +1,20 @@
+id: AC-01
+title: Quarterly user access review
+owner: IT Operations (application owners)
+frequency: quarterly
+type: detective
+automation: partial   # scripts/uar_check.py produces the exception list
+description: >
+  Application owners review all user accounts of in-scope applications each quarter.
+  Accounts of leavers and access that does not match the user's role are removed or justified.
+test_procedure:
+  - Obtain the account export of each in-scope application and the HR active employee list.
+  - Run scripts/uar_check.py and confirm every exception was removed or justified by the owner.
+  - Inspect sign-off by the application owner within 15 days of quarter end.
+evidence:
+  - Account export and HR list (dated)
+  - Exception report from uar_check.py
+  - Owner sign-off with remediation tickets
+mappings:
+  soc2: [CC6.1, CC6.2, CC6.3]
+  iso27001: ["5.15", "5.18"]

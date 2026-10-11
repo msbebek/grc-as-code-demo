@@ -1,0 +1,5 @@
+email,role,exception
+ben.ortiz@example.com,admin,Privileged access without approval reference
+clara.wu@example.com,accountant,Role not allowed for department Sales
+george.hart@example.com,accountant,No active employee in HR (leaver or unknown account)
+svc-backup@example.com,admin,No active employee in HR (leaver or unknown account)

@@ -1,0 +1,14 @@
+# Subset of SOC 2 Trust Services Criteria (2017, revised points of focus 2022) in scope for this demo.
+framework: SOC 2
+requirements:
+  CC2.3: Communicates with external parties
+  CC5.1: Selects and develops control activities
+  CC6.1: Logical access security
+  CC6.2: User registration and removal
+  CC6.3: Role-based access, least privilege and segregation of duties
+  CC6.6: Protection against threats from outside system boundaries
+  CC6.7: Restricts transmission of information (encryption in transit)
+  CC7.2: Monitors system components for anomalies
+  CC7.3: Evaluates security events
+  CC8.1: Change management
+  CC9.2: Vendor and business partner risk

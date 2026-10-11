@@ -1,0 +1,18 @@
+id: CM-01
+title: Changes to production are reviewed and approved
+owner: Engineering
+frequency: continuous
+type: preventive
+automation: full   # branch protection enforces review before merge
+description: >
+  Changes to production code and configuration go through a pull request with at least one reviewer
+  other than the author. Branch protection blocks direct pushes to the main branch.
+test_procedure:
+  - Inspect branch protection settings of in-scope repositories.
+  - Sample merged pull requests and confirm an approval by someone other than the author.
+evidence:
+  - Branch protection configuration export
+  - Sample of merged PRs with reviewer and approval timestamps
+mappings:
+  soc2: [CC8.1]
+  iso27001: ["8.32"]

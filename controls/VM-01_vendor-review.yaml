@@ -1,0 +1,18 @@
+id: VM-01
+title: Vendor security review
+owner: Procurement and IT Security
+frequency: annual
+type: preventive
+automation: partial
+description: >
+  New vendors that process company or customer data are risk-rated before contract signature.
+  High-risk vendors provide a SOC 2 report or ISO 27001 certificate, reviewed every year.
+test_procedure:
+  - Sample new vendors and confirm the risk rating was done before signature.
+  - For high-risk vendors, inspect the latest SOC 2 report or certificate and its review.
+evidence:
+  - Vendor inventory with risk ratings
+  - Reviewed SOC 2 reports and certificates
+mappings:
+  soc2: [CC9.2]
+  iso27001: ["5.19", "5.22"]
